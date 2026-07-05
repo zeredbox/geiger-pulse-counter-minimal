@@ -7,7 +7,7 @@
  * This program is an ultra-minimalist framework for interfacing 
  * a Geiger-Müller counter tube with an Arduino or ESP32. 
  * 
- * @section License
+ * @section License_Section License
  * This is free and unencumbered software released into the public domain (The Unlicense).
  * Anyone is free to copy, modify, publish, use, compile, sell, or distribute this 
  * software for any purpose, commercial or non-commercial.
