@@ -13,7 +13,7 @@ Un programme Arduino/ESP32 ultra-léger, non bloquant, pour s'interfacer avec un
 2. **Flag non bloquant :** L'ISR ne traite pas les données et n'affiche rien sur le port Série (ce qui ferait planter le microcontrôleur). Elle passe simplement la variable `pulseDetected` à `true`.
 3. **Traitement dans la boucle principale :** La fonction `loop()` gère l'affichage et incrémente un compteur 32 bits (`pulseCount`) pour enregistrer chaque événement de manière séquentielle (`detection 1`, `detection 2`, etc.).
 
-## 🛠️ Montage Électrique
+## 🛠️ Montage électrique
 
 | Broche Module Geiger | Broche Arduino | Rôle / Notes |
 | :--- | :--- | :--- |
