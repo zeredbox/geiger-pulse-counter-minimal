@@ -1,6 +1,6 @@
 # geiger-pulse-counter-minimal
 
-Un programme Arduino/ESP32 ultra-léger, non bloquant, pour s'interfacer avec un tube compteur de radiations Geiger-Müller. Ce code sert de base matérielle propre pour des projets plus avancés tels que moniteurs de radioactivité (CPM/µSv/h) ou générateurs de nombres aléatoires quantiques (TRNG).
+Un programme Arduino/ESP32 ultra-léger, non bloquant, pour s'interfacer avec un tube compteur de radiations Geiger-Müller. Ce code sert de base matérielle propre pour des projets plus avancés tels que moniteurs de radioactivité (CPM/µSv/h) ou générateurs de nombres aléatoires quantiques (True Random Number Generator - TRNG).
 
 ## 🚀 Caractéristiques
 * **Géré par interruptions (ISR) :** Capture les impulsions instantanément sans ralentir la boucle principale.
