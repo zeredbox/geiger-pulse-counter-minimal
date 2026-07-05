@@ -26,7 +26,7 @@ An ultra-lightweight, optimized, and non-blocking Arduino/ESP32 framework to int
 ## 💻 Output Example
 When a radioactive particle is detected, the Serial Monitor will display:
 ```text
-Geiger Pulse Counter Ready...
+Geiger pulse counter ready...
 detection 1
 detection 2
 detection 3
