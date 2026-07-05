@@ -8,12 +8,12 @@ An ultra-lightweight and non-blocking Arduino/ESP32 framework to interface with 
 * **Multi-platform:** Out-of-the-box support for Arduino Uno, Nano, and ESP32.
 * **Sequential logging:** Outputs data safely via Serial at `115200` baud.
 
-## ⚙️ How It Works
+## ⚙️ How it works
 1. **Hardware Interrupt (ISR):** Every time a radioactive particle hits the Geiger tube, the module generates a brief voltage drop. This triggers the `geigerISR()` function instantly via external hardware interrupts, bypassing the slower main loop.
 2. **Non-blocking Flag:** The ISR does not process data or print to Serial (which would crash the micro-controller). It simply sets `pulseDetected` to true.
 3. **Main Loop Processing:** The `loop()` handles the display and increments a 32-bit counter (`pulseCount`) to log each event sequentially (`detection 1`, `detection 2`, etc.).
 
-## 🛠️ Hardware Setup
+## 🛠️ Hardware setup
 
 | Geiger Module Pin | Arduino Pin | Role / Notes |
 | :--- | :--- | :--- |
@@ -23,12 +23,12 @@ An ultra-lightweight and non-blocking Arduino/ESP32 framework to interface with 
 
 > ⚠️ **Technical Note:** Pin 3 (D3) is mandatory on Arduino Uno/Nano because it natively supports external hardware interrupts.
 
-## 🔮 Future Project Extensions
+## 🔮 Project extensions
 This code can easily be upgraded into:
 * **A Radiation Monitor:** Add a timer (`millis()`) to count pulses over 60 seconds to calculate CPM (Counts Per Minute) and µSv/h.
 * **A Quantum TRNG (True Random Number Generator):** Measure the time interval between pulses using `micros()` to extract unpredictable random bits.
 
-## 💻 Output Example
+## 💻 Output example
 When a radioactive particle is detected, the Serial Monitor will display:
 ```text
 Geiger Pulse Counter Ready...
