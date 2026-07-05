@@ -1,10 +1,16 @@
 /*!
  * @file geiger_pulse_counter_minimal.ino
  * @brief Minimalist base code that counts and logs Geiger hardware pulses.
+ * @see https://github.com/zeredbox/geiger-pulse-counter-minimal
  * 
  * @section Program_Description Program Description
  * This program is an ultra-minimalist framework for interfacing 
  * a Geiger-Müller counter tube with an Arduino or ESP32. 
+ * 
+ * @section License
+ * This is free and unencumbered software released into the public domain (The Unlicense).
+ * Anyone is free to copy, modify, publish, use, compile, sell, or distribute this 
+ * software for any purpose, commercial or non-commercial.
  * 
  * HOW IT WORKS:
  * 1. Hardware Interrupt (ISR): Every time a radioactive particle hits the Geiger tube, 
